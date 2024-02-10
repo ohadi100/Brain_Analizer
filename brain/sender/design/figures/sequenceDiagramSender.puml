@@ -1,0 +1,119 @@
+@startuml
+participant BrainApp
+
+!$brainAppThread="#Yellow"
+!$reactorThread="#Green"
+
+== Init ==
+
+BrainApp ++ $brainAppThread
+create Reactor
+BrainApp -> Reactor : make_shared
+BrainApp -> Reactor : Start()
+Reactor -> Reactor : std::thread(workerThread)
+Reactor ++ $reactorThread
+create MessageRepositoryPriorityQueue
+BrainApp -> MessageRepositoryPriorityQueue : make_shared
+BrainApp -> MessageRepositoryPriorityQueue : Init()
+create Creditor
+BrainApp -> Creditor : make_unique
+create Publisher
+Publisher ++
+BrainApp -> Publisher  : make_unique
+create ExceededMessageSizeCheck
+BrainApp -> ExceededMessageSizeCheck : make_shared
+create SenderManager
+SenderManager ++ $brainAppThread
+BrainApp -> SenderManager : make_unique
+BrainApp --
+create BELogicSM
+SenderManager -> BELogicSM : make_unique
+create MessageSerialize
+SenderManager -> MessageSerialize : make_unique
+SenderManager -> SenderManager : Initialize local \ndata members
+SenderManager --> BrainApp : Initialized
+SenderManager --
+BrainApp ++ $brainAppThread
+
+== Enable ==
+
+BrainApp -> SenderManager : Enable
+BrainApp --
+SenderManager ++ $brainAppThread
+SenderManager -> SenderManager : setPeriodicSendEventTask()
+SenderManager -> SenderManager : setReactorTask(EVENT_CONNECT)
+SenderManager --> BrainApp 
+SenderManager -- 
+BrainApp ++ $brainAppThread
+Reactor -> BELogicSM : setSMEvent(EVENT_CONNECT)
+Reactor --
+BELogicSM ++ $reactorThread
+note top: current state is Init
+BELogicSM -> StateInit  : OnConnect()
+BELogicSM --
+StateInit ++ $reactorThread
+StateInit  -> Publisher : Connect ( publisherCallback) 
+StateInit -> StateInit  : reloadTimerTask(WAIT_FOR_CONNECTION_UP)
+StateInit --> BELogicSM  :
+StateInit --
+BELogicSM ++ $reactorThread
+BELogicSM -> BELogicSM : change state to Connecting
+BELogicSM --
+Reactor ++ $reactorThread
+BELogicSM --> Reactor
+
+== Publisher Notification ==
+
+Publisher -> SenderManager : PublisherCallback
+Publisher --
+SenderManager ++
+note left : Notification received from the BE
+SenderManager -> SenderManager : setReactorTask(EVENT_CONNECTED)
+SenderManager --> Publisher
+SenderManager --
+Publisher ++
+Reactor -> BELogicSM : setSMEvent(EVENT_CONNECTED)
+Reactor --
+BELogicSM ++ $reactorThread
+SenderManager -> BELogicSM : Post event: connected (via reactor's Exec function)
+note right: current state is Connecting
+BELogicSM -> BaseState  : OnConnected()
+BELogicSM -> BELogicSM : change state to ReadyToSend
+BELogicSM --> Reactor
+BELogicSM --
+Reactor ++ $reactorThread
+
+== Disable ==
+
+BrainApp -> SenderManager : Disable
+BrainApp --
+SenderManager ++ $brainAppThread
+SenderManager -> SenderManager : setReactorTask(EVENT_DISABLE)
+SenderManager --> BrainApp
+SenderManager --
+BrainApp ++ $brainAppThread
+Reactor -> BELogicSM : setSMEvent(EVENT_DISABLE)
+Reactor --
+BELogicSM ++ $reactorThread
+note right: current state is ReadyToSend
+BELogicSM -> StateReadyToSend : OnDisable()
+BELogicSM --
+StateReadyToSend ++ $reactorThread
+StateReadyToSend -> Reactor : CancelTimeout(PeriodicTimer)
+StateReadyToSend -> Reactor : CancelTimeout(LastTimer) 
+StateReadyToSend -> Publisher : Disconnect()
+StateReadyToSend --> BELogicSM
+StateReadyToSend --
+BELogicSM ++ $reactorThread
+BELogicSM -> BELogicSM : change state to Disabled
+BELogicSM --> Reactor
+BELogicSM --
+Reactor ++ $reactorThread
+
+box 
+participant StateInit
+participant StateReadyToSend
+participant BaseState
+end box
+
+@enduml

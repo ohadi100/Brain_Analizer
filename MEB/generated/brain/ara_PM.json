@@ -1,0 +1,81 @@
+{
+  "version_info": {
+    "pluget_build_git_version": "RFI_ADG-1.4.14_1",
+    "pluget_build_date": "28-03-2023 13:37:08"
+  },
+  "kvsbackend": "daemon",
+  "application_id": "brain",
+  "unix_domain_socket_path": "/var/run/adaptive/ara_PM/ara_PM.socket",
+  "kvs_properties": [
+    {
+      "port_name": "ids_brain_priority0_events",
+      "initial_data": "",
+      "caching_settings": {
+        "cache_enabled": true,
+        "flush_limit": 0.89
+      },
+      "db_path": "",
+      "flash_protection": false
+    },
+    {
+      "port_name": "ids_brain_priority1_events",
+      "initial_data": "",
+      "caching_settings": {
+        "cache_enabled": true,
+        "flush_limit": 0.89
+      },
+      "db_path": "",
+      "flash_protection": false
+    },
+    {
+      "port_name": "ids_brain_priority2_events",
+      "initial_data": "",
+      "caching_settings": {
+        "cache_enabled": true,
+        "flush_limit": 0.89
+      },
+      "db_path": "",
+      "flash_protection": false
+    },
+    {
+      "port_name": "ids_brain_priority3_events",
+      "initial_data": "",
+      "caching_settings": {
+        "cache_enabled": true,
+        "flush_limit": 0.89
+      },
+      "db_path": "",
+      "flash_protection": false
+    },
+    {
+      "port_name": "ids_brain_creditor",
+      "initial_data": "",
+      "caching_settings": {
+        "cache_enabled": true,
+        "flush_limit": 0.89
+      },
+      "db_path": "",
+      "flash_protection": false
+    },
+    {
+      "port_name": "ids_brain_configurationData",
+      "initial_data": "",
+      "caching_settings": {
+        "cache_enabled": true,
+        "flush_limit": 0.89
+      },
+      "db_path": "",
+      "flash_protection": false
+    },
+    {
+      "port_name": "ids_brain_coredump_analyzer",
+      "initial_data": "",
+      "caching_settings": {
+        "cache_enabled": true,
+        "flush_limit": 0.89
+      },
+      "db_path": "",
+      "flash_protection": false
+    }
+  ]
+}

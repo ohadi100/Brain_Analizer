@@ -1,0 +1,23 @@
+{
+  "deployable_files": {
+    "systemd_unit_file": [
+      "brain"
+    ],
+    "adaptive_core_module_config": [],
+    "app_config_for_EM": [],
+    "app_config_for_SM": [],
+    "app_config_for_PHM": [],
+    "app_config_for_DLT": [],
+    "app_config_for_COM": [],
+    "app_config_for_UdpNm": [],
+    "app_config_for_Rest": [],
+    "app_config_for_TSyn": [],
+    "app_config_for_SEC": [],
+    "app_config_for_IAM": [],
+    "app_config_for_DM": [],
+    "app_config_for_DM_so_files": [],
+    "app_config_for_PM": [],
+    "app_config_for_PM_KVS": [],
+    "app_config_for_DM_pluget": []
+  }
+}

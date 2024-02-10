@@ -1,0 +1,8 @@
+# line format is as follows:
+# <filename> <rate> <duration>
+# each line will generate the desired template (saved in filename), every 1/<rate> miliseconds, for a <duration> of seconds.
+# empty lines and comments marked by '#' are ignored.
+# ===================================================
+
+HostFileMonitorIncident.JSON 2 1
+KernelLogIncident.JSON 2 1

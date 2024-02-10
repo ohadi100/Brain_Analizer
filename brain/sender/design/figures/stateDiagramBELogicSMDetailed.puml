@@ -1,0 +1,47 @@
+@startuml
+title BE Logic State Machine Diagram Detailed
+<style>
+stateDiagram{
+    Arrow{
+        FontSize 10
+    }
+}
+</style>
+skinparam stateMessageAlignment Left
+skinparam state{
+     AttributeFontSize  50
+}
+Init:
+Init --> Connecting : **EVENT_CONNECT**\n(on enable or internal reconnect)
+
+Connecting --> Init: **EVENT_CONNECTION_TIMEOUT** \n/Set EVENT_CONNECT
+Connecting --> ReadyToSend : **EVENT_CONNECTED**
+Connecting --> Disabled : **EVENT_DISABLE**
+
+
+ReadyToSend --> Init : **EVENT_DISCONNECT** \n/Set EVENT_CONNECT
+ReadyToSend --> Disabled : **EVENT_DISABLE** \n/cancel timer DATA_SENT,\n disconnect from publisher
+ReadyToSend --> WaitAck : **EVENT_SEND_DATA** \n/start timer DATA_SENT
+
+
+
+WaitAck --> Init : **EVENT_DISCONNECT**
+WaitAck --> Disabled : **EVENT_DISABLE**
+WaitAck --> ReadyToSend : **EVENT_ACK_OK | EVENT_ACK_OK_WITH_TO_EXPIRED** \n/ consume credits
+WaitAck --> WaitAck : **EVENT_ACK_OK_WITH_TO** \n/trigger timer ACK_OK_TIMEOT
+WaitAck --> Retry :  **EVENT_ACK_RETRY** \n/Set EVENT_SEND_OLD_DATA
+WaitAck --> Retry : **EVENT_ACK_RETRY_WITH_TO** \n/trigger timer RETRY_TIMEOUT
+
+WaitAck --> Retry : **EVENT_DATA_SENT_TIMEOUT** \n/Set EVENT_SEND_OLD_DATA
+
+
+
+Retry --> Init : **EVENT_DISCONNECT**
+Retry --> WaitAck : **EVENT_SEND_OLD_DATA** [retry count <= RETRY_LIMIT] \n/resend data, start timer DATA_SENT
+Retry --> Retry : **EVENT_SEND_OLD_DATA** [retry count > RETRY_LIMIT] \n/Set event EVENT_MAX_RETRY
+Retry --> Init : **EVENT_MAX_RETRY** \n/ disconnect from publisher ,\n Set EVENT_CONNECT
+Retry --> Disabled : **EVENT_DISABLE**
+
+Disabled --> Init : **EVENT_ENABLE** \n/ EVENT_CONNECT set externally
+
+@enduml

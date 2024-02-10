@@ -1,0 +1,34 @@
+{
+  "id": "6207fdae-d49d-463d-bd17-34f09072c5c0",
+  "timestamp": 0,
+  "constraintId": "b74fb8c4-8a20-4249-93e6-138c90442f77",
+  "type": 2,
+  "baseSuvElements": [ "b859f098-611a-4e60-be59-e33f8e634cf1" ],
+  "additional info":
+    {
+      "dataSets" : [
+        {
+          "baseSuvElementId": "b859f098-611a-4e60-be59-e33f8e634cf1",
+          "dataItems": [
+            {
+              "reference": "dacq/5efd8d60-d620-4055-aca9-41f59ac50986/4757a59c-0857-421c-b5ba-a63d52c6ea7e",
+              "value": [
+                {
+                  "id": 0,
+                  "value": "/etc/fstab"
+                },
+                {
+                  "id": 1,
+                  "value": "modified"
+                },
+                {
+                  "id": 2,
+                  "value": 1598957390.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+}

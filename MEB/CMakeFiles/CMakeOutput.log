@@ -1,0 +1,620 @@
+The target system is: Linux -  - 
+The host system is: Linux - 5.10.102.1-microsoft-standard-WSL2 - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ 
+Build flags: --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux;-D_QEMU_ARM64_EVO;-Wall;-std=c++14;-pthread;-fstack-protector-strong;-ffunction-sections;-fdata-sections;-DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION;-DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/3.9.5/CompilerIdCXX/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_ad451/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_ad451.dir/build.make CMakeFiles/cmTC_ad451.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ad451.dir/testCXXCompiler.cxx.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -fstack-protector-strong -o CMakeFiles/cmTC_ad451.dir/testCXXCompiler.cxx.o -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_ad451
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad451.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES     CMakeFiles/cmTC_ad451.dir/testCXXCompiler.cxx.o  -o cmTC_ad451 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_c7c59/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_c7c59.dir/build.make CMakeFiles/cmTC_c7c59.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c7c59.dir/CMakeCXXCompilerABI.cpp.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -fstack-protector-strong -o CMakeFiles/cmTC_c7c59.dir/CMakeCXXCompilerABI.cpp.o -c /home/ohad/icas-1-sdk/sysroot/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_c7c59
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7c59.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES    -v CMakeFiles/cmTC_c7c59.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c7c59 -lgtest -lgmock -lpthread 
+Using built-in specs.
+COLLECT_GCC=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++
+COLLECT_LTO_WRAPPER=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper
+Target: aarch64-poky-linux
+Configured with: ../../../../../../work-shared/gcc-10.2.0-r0/gcc-10.2.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr --bindir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/com --localstatedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/var --libdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/10.2.0 --with-build-time-tools=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.2.0 (GCC) 
+COMPILER_PATH=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux' '-D' '_QEMU_ARM64_EVO' '-Wall' '-std=c++14' '-pthread' '-fstack-protector-strong' '-ffunction-sections' '-fdata-sections' '-D' 'ARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION' '-D' 'ARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES' '-v' '-o' 'cmTC_c7c59' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+ /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckgxNOx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_c7c59 /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/Scrt1.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crti.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib CMakeFiles/cmTC_c7c59.dir/CMakeCXXCompilerABI.cpp.o -lgtest -lgmock -lpthread -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux' '-D' '_QEMU_ARM64_EVO' '-Wall' '-std=c++14' '-pthread' '-fstack-protector-strong' '-ffunction-sections' '-fdata-sections' '-D' 'ARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION' '-D' 'ARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES' '-v' '-o' 'cmTC_c7c59' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-poky-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_c7c59/fast"]
+  ignore line: [/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_c7c59.dir/build.make CMakeFiles/cmTC_c7c59.dir/build]
+  ignore line: [make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c7c59.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -fstack-protector-strong -o CMakeFiles/cmTC_c7c59.dir/CMakeCXXCompilerABI.cpp.o -c /home/ohad/icas-1-sdk/sysroot/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_c7c59]
+  ignore line: [/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7c59.dir/link.txt --verbose=1]
+  ignore line: [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES    -v CMakeFiles/cmTC_c7c59.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c7c59 -lgtest -lgmock -lpthread ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-10.2.0-r0/gcc-10.2.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr --bindir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/com --localstatedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/var --libdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/10.2.0 --with-build-time-tools=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux' '-D' '_QEMU_ARM64_EVO' '-Wall' '-std=c++14' '-pthread' '-fstack-protector-strong' '-ffunction-sections' '-fdata-sections' '-D' 'ARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION' '-D' 'ARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES' '-v' '-o' 'cmTC_c7c59' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckgxNOx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_c7c59 /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/Scrt1.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crti.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib CMakeFiles/cmTC_c7c59.dir/CMakeCXXCompilerABI.cpp.o -lgtest -lgmock -lpthread -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crtn.o]
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cckgxNOx.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c7c59] ==> ignore
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/Scrt1.o] ==> ignore
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crti.o] ==> ignore
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o] ==> ignore
+    arg [-L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0] ==> dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0]
+    arg [-L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib] ==> dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib]
+    arg [-L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0] ==> dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0]
+    arg [-L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib] ==> dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib]
+    arg [CMakeFiles/cmTC_c7c59.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lgtest] ==> lib [gtest]
+    arg [-lgmock] ==> lib [gmock]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o] ==> ignore
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crtn.o] ==> ignore
+  collapse library dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0] ==> [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0]
+  collapse library dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib] ==> [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib]
+  collapse library dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0] ==> [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0]
+  collapse library dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib] ==> [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib]
+  implicit libs: [gtest;gmock;pthread;stdc++;m;gcc_s;gcc;pthread;c;gcc_s;gcc]
+  implicit dirs: [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0;/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib;/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0;/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_01564/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_01564.dir/build.make CMakeFiles/cmTC_01564.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_01564.dir/feature_tests.cxx.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -std=c++1z -fstack-protector-strong -o CMakeFiles/cmTC_01564.dir/feature_tests.cxx.o -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_01564
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01564.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES     CMakeFiles/cmTC_01564.dir/feature_tests.cxx.o  -o cmTC_01564 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_66563/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_66563.dir/build.make CMakeFiles/cmTC_66563.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_66563.dir/feature_tests.cxx.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -std=c++14 -fstack-protector-strong -o CMakeFiles/cmTC_66563.dir/feature_tests.cxx.o -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_66563
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66563.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES     CMakeFiles/cmTC_66563.dir/feature_tests.cxx.o  -o cmTC_66563 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_b7fbb/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_b7fbb.dir/build.make CMakeFiles/cmTC_b7fbb.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b7fbb.dir/feature_tests.cxx.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -std=c++11 -fstack-protector-strong -o CMakeFiles/cmTC_b7fbb.dir/feature_tests.cxx.o -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b7fbb
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7fbb.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES     CMakeFiles/cmTC_b7fbb.dir/feature_tests.cxx.o  -o cmTC_b7fbb -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_ef875/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_ef875.dir/build.make CMakeFiles/cmTC_ef875.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ef875.dir/feature_tests.cxx.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -std=c++98 -fstack-protector-strong -o CMakeFiles/cmTC_ef875.dir/feature_tests.cxx.o -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ef875
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef875.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES     CMakeFiles/cmTC_ef875.dir/feature_tests.cxx.o  -o cmTC_ef875 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc 
+Build flags: --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux;-D_QEMU_ARM64_EVO;-Wall;-ffunction-sections;-pthread;-fstack-protector-strong;-fdata-sections;-DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION;-DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/3.9.5/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_518cf/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_518cf.dir/build.make CMakeFiles/cmTC_518cf.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_518cf.dir/testCCompiler.c.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc  -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -fstack-protector-strong -o CMakeFiles/cmTC_518cf.dir/testCCompiler.c.o   -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_518cf
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_518cf.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES     CMakeFiles/cmTC_518cf.dir/testCCompiler.c.o  -o cmTC_518cf -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_1a96b/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_1a96b.dir/build.make CMakeFiles/cmTC_1a96b.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1a96b.dir/CMakeCCompilerABI.c.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc  -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -fstack-protector-strong -o CMakeFiles/cmTC_1a96b.dir/CMakeCCompilerABI.c.o   -c /home/ohad/icas-1-sdk/sysroot/usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_1a96b
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a96b.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES    -v CMakeFiles/cmTC_1a96b.dir/CMakeCCompilerABI.c.o  -o cmTC_1a96b -lgtest -lgmock -lpthread 
+Using built-in specs.
+COLLECT_GCC=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc
+COLLECT_LTO_WRAPPER=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper
+Target: aarch64-poky-linux
+Configured with: ../../../../../../work-shared/gcc-10.2.0-r0/gcc-10.2.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr --bindir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/com --localstatedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/var --libdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/10.2.0 --with-build-time-tools=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.2.0 (GCC) 
+COMPILER_PATH=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux' '-D' '_QEMU_ARM64_EVO' '-Wall' '-ffunction-sections' '-pthread' '-fstack-protector-strong' '-fdata-sections' '-D' 'ARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION' '-D' 'ARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES' '-v' '-o' 'cmTC_1a96b' '-mlittle-endian' '-mabi=lp64'
+ /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIWTaNC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_1a96b /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/Scrt1.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crti.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib CMakeFiles/cmTC_1a96b.dir/CMakeCCompilerABI.c.o -lgtest -lgmock -lpthread -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux' '-D' '_QEMU_ARM64_EVO' '-Wall' '-ffunction-sections' '-pthread' '-fstack-protector-strong' '-fdata-sections' '-D' 'ARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION' '-D' 'ARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES' '-v' '-o' 'cmTC_1a96b' '-mlittle-endian' '-mabi=lp64'
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-poky-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_1a96b/fast"]
+  ignore line: [/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_1a96b.dir/build.make CMakeFiles/cmTC_1a96b.dir/build]
+  ignore line: [make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_1a96b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc  -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -fstack-protector-strong -o CMakeFiles/cmTC_1a96b.dir/CMakeCCompilerABI.c.o   -c /home/ohad/icas-1-sdk/sysroot/usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_1a96b]
+  ignore line: [/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a96b.dir/link.txt --verbose=1]
+  ignore line: [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES    -v CMakeFiles/cmTC_1a96b.dir/CMakeCCompilerABI.c.o  -o cmTC_1a96b -lgtest -lgmock -lpthread ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-10.2.0-r0/gcc-10.2.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr --bindir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/com --localstatedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/var --libdir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/opt/corbos-linux/2.31.0/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/10.2.0 --with-build-time-tools=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/data/jenkins/workspace/ICAS1_yocto_build/docker_ws/.repo/manifests/build.qemu-arm64-evo.corbos-linux/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/10.2.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --enable-nls --with-glibc-version=2.28 --enable-initfini-array --enable-__cxa_atexit]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/:/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux' '-D' '_QEMU_ARM64_EVO' '-Wall' '-ffunction-sections' '-pthread' '-fstack-protector-strong' '-fdata-sections' '-D' 'ARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION' '-D' 'ARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES' '-v' '-o' 'cmTC_1a96b' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIWTaNC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_1a96b /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/Scrt1.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crti.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib CMakeFiles/cmTC_1a96b.dir/CMakeCCompilerABI.c.o -lgtest -lgmock -lpthread -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crtn.o]
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccIWTaNC.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_1a96b] ==> ignore
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/Scrt1.o] ==> ignore
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crti.o] ==> ignore
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o] ==> ignore
+    arg [-L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0] ==> dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0]
+    arg [-L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib] ==> dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib]
+    arg [-L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0] ==> dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0]
+    arg [-L/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib] ==> dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib]
+    arg [CMakeFiles/cmTC_1a96b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgtest] ==> lib [gtest]
+    arg [-lgmock] ==> lib [gmock]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o] ==> ignore
+    arg [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/crtn.o] ==> ignore
+  collapse library dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0] ==> [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0]
+  collapse library dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib] ==> [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib]
+  collapse library dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0] ==> [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0]
+  collapse library dir [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib] ==> [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib]
+  implicit libs: [gtest;gmock;pthread;gcc;gcc_s;pthread;c;gcc;gcc_s]
+  implicit dirs: [/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0;/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/lib;/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib/aarch64-poky-linux/10.2.0;/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_11530/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_11530.dir/build.make CMakeFiles/cmTC_11530.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_11530.dir/feature_tests.c.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc  -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -std=c11 -fstack-protector-strong -o CMakeFiles/cmTC_11530.dir/feature_tests.c.o   -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/feature_tests.c
+Linking C executable cmTC_11530
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11530.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES     CMakeFiles/cmTC_11530.dir/feature_tests.c.o  -o cmTC_11530 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_c2f52/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_c2f52.dir/build.make CMakeFiles/cmTC_c2f52.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c2f52.dir/feature_tests.c.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc  -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -std=c99 -fstack-protector-strong -o CMakeFiles/cmTC_c2f52.dir/feature_tests.c.o   -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c2f52
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2f52.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES     CMakeFiles/cmTC_c2f52.dir/feature_tests.c.o  -o cmTC_c2f52 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_10a40/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_10a40.dir/build.make CMakeFiles/cmTC_10a40.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10a40.dir/feature_tests.c.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc  -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES  -fPIE   -std=c90 -fstack-protector-strong -o CMakeFiles/cmTC_10a40.dir/feature_tests.c.o   -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/feature_tests.c
+Linking C executable cmTC_10a40
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10a40.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -ffunction-sections -pthread -fstack-protector-strong -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES     CMakeFiles/cmTC_10a40.dir/feature_tests.c.o  -o cmTC_10a40 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros

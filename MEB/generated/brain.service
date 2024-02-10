@@ -1,0 +1,33 @@
+[Unit]
+Description=Container for Adaptive Process brain
+
+[Service]
+ExecStart=/sbin/cont-ctrl start brain
+Type=notify
+TimeoutStopSec=10
+ExecStopPost=/sbin/cont-ctrl stop brain
+ExecStopPost=/usr/binadaptive/adg_process_exit
+Delegate=yes
+Environment="APP_INSTANCE_ID=brain"
+
+# Start cgroup configs
+# Generator version: 0.1.0 date: 28-03-2023 13:37:08
+# See man systemd.resource-control for available options & definitions
+# --
+MemoryLimit=500M
+# --
+# End cgroup configs
+
+# Start ulimit configs
+# See man systemd.exec (5) for available options & definitions
+# --
+Resources=ProcessConfigClass
+DataPartitionSize=0
+CPUQuota=100%
+Data=1024
+Stack=2048
+Nice=0
+CPUAffinity=0-31
+# --
+# End ulimit configs
+

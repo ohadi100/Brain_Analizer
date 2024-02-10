@@ -1,0 +1,2 @@
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-ar qc ../../../../../../../../../libs/libExecutionReporter.a  CMakeFiles/ExecutionReporter.dir/ExecutionReporter.cpp.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-ranlib ../../../../../../../../../libs/libExecutionReporter.a

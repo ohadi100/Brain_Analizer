@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "0.0.1",
+  "metaSuvSet": {
+    "metaId": "a87236fb-eadf-4feb-9be9-b5fb5e7f5b73",
+    "name": "Distributed Health Management",
+    "version": "0.1.0",
+    "elements": [
+      {
+        "metaId": "393cc2c6-e412-4414-9d72-65df787487ef",
+        "name": "AdaptiveProcess",
+        "attributes": [
+          {
+            "name": "PID",
+            "type": "int32",
+            "default value": 0
+          },
+          {
+            "name": "PPID",
+            "type": "int32",
+            "default value": 0
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "default value": ""
+          },
+          {
+            "name": "starttime",
+            "type": "uint64",
+            "default value": 0
+          },
+          {
+            "name": "cmdline",
+            "type": "string",
+            "default value": ""
+          },
+          {
+            "name": "ParentName",
+            "type": "string",
+            "default value": ""
+          }
+        ]
+      },
+      {
+        "metaId": "ce7cece3-fb3f-4397-b2aa-cda4761322da",
+        "name": "Partition",
+        "attributes": [
+          {
+            "name": "OS Type",
+            "type": "uint32",
+            "default value": 0
+          },
+          {
+            "name": "Kernel Version",
+            "type": "string",
+            "default value": ""
+          },
+          {
+            "name": "Command Line",
+            "type": "string",
+            "default value": ""
+          }
+        ]
+      },
+      {
+        "metaId": "7ed8bdd6-0ebc-4a2c-bc0a-57b314310329",
+        "name": "KernelLog",
+        "attributes": [
+        ]
+      },
+      {
+        "metaId" : "92d58a6e-4860-409c-9566-31cdb52a80e6",
+        "name" : "DroppedPacketInformation",
+        "attributes" : [ ]
+      },
+      {
+        "metaId" : "5efd8d60-d620-4055-aca9-41f59ac50986",
+        "name" : "HostFileMonitor",
+        "attributes" : [ ]
+      },
+      {
+        "metaId" : "7b4ba445-f8ce-47c5-99be-2773e4f7da3a",
+        "name" : "ForwardedPacketInformation",
+        "attributes" : [
+           {
+             "name" : "protocol",
+             "type" : "uint32",
+             "default value" : 58
+           },
+           {
+             "name" : "direction",
+             "type" : "uint32",
+             "default value" : 0
+           },
+           {
+             "name" : "port",
+             "type" : "uint32",
+             "default value" : 0
+           },
+           {
+             "name" : "icmpType",
+             "type" : "uint32",
+             "default value" : 0
+           }
+        ]
+      },
+      {
+        "metaId" : "9446b4d9-6998-43ee-9f10-08a9ecd45535",
+        "name" : "TLSErrorReporting",
+        "attributes" : [ ]
+      },
+      {
+        "metaId" : "4b06fb36-d267-4789-bc26-c85ad0f0d45c",
+        "name" : "SRMReporting",
+        "attributes" : [ ]
+      },
+      {
+        "metaId" : "a7fc69af-0efb-4088-a8f4-e4f5801e7ddf",
+        "name" : "PHM Actions",
+        "attributes" : [ 
+           {
+             "name" : "action",
+             "type" : "string",
+             "default value" : "" 
+           }
+        ]
+      },
+      {
+        "metaId" : "290fe4c6-91fd-41d5-b70d-f85b2823aeb5",
+        "name" : "Service Availability",
+        "attributes" : [
+          {
+            "name" : "ServiceName",
+            "type" : "string",
+            "default value" : ""
+          }
+        ]
+      }
+    ]
+  }
+}

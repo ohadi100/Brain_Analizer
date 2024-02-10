@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package brain.publishers.agents;
+
+/*
+ * This is a Protocol Buffers implementation of CampaignConfigurations.
+ * More info can be found in README.md.
+ */
+
+message CampaignConfiguration {
+  uint32 keyID = 1;
+  string uuid = 2;
+}

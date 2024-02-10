@@ -1,0 +1,103 @@
+@startuml classDiagramSender
+title Sender manager Class Diagram
+skin rose
+package common
+{
+    package configuration
+    {
+        class Configuration
+    }
+    package memory
+    {
+        class PersistentMemoryFactory
+    }
+    package counters
+    {
+        class CounterManager
+    }
+    package thread_handler
+    {
+        class Reactor
+    }
+    package Utils
+    {
+        class StateMachine
+    }
+}
+'------------------------------------------------------------------------------------------'
+package brain
+{
+
+
+
+    package messageRepository
+    {
+        class MessageRepositoryQueue
+    }
+    package publishers
+    {
+        class XYZ_Publisher
+        note bottom : platform specific publisher
+        package utils
+        {
+            class ExceededMessageSizeCheck
+        }
+    }
+
+    package sender
+    {
+
+        class BELogicSM
+        {
+            + BELogicSM(SenderManager& senderManager,\n const SenderManager::TimersVectorPairs& timersVector)
+
+        }
+
+        BELogicSM --|> StateMachine
+        BELogicSM <-down-* SenderManager
+
+        '------------------------------------------------------------------------------------------'
+        class SenderManager
+        {
+            + SenderManager( \n PersistentMemoryFactoryPtr const persistentMemoryFactory, \n CounterManagerPtr debugCounters, \n ConfigurationPtr configuration, \n ReactorPtr reactor, \n MessageRepositoryPtr msgRepository, \n CreditorUPtr creditor, \n PublisherUPtr publisher, \n ExceededMessageSizeCheckPtr exceededMessageSizeCheck, \n bool shouldSerialize = false, \n TimersVectorPairs timersVector = {})
+            + bool SendMessage() 
+            + bool ReSendMessage()
+            + void PrepareToShutDown()
+            + void CancelPrepareToShutDown()
+            + void Enable()
+            + void Disable()
+            + PublisherCallback()
+
+        }
+        SenderManager ..> PersistentMemoryFactory
+        SenderManager ..> CounterManager
+        SenderManager ..> Configuration
+        SenderManager ..> Reactor
+        SenderManager ..> MessageRepositoryQueue
+        SenderManager *-> Creditor
+        SenderManager *-- XYZ_Publisher
+        SenderManager ..> ExceededMessageSizeCheck
+
+        '------------------------------------------------------------------------------------------'
+        class Creditor
+        {
+            + Creditor( PersistentMemoryFactoryPtr const persistentMemoryFactory,\n std::shared_ptr<common::counters::CounterManager> debugCounters,\n ConfigurationPtr config)
+            + uint64_t GetByteCredit()
+            + bool UseCredit(uint64_t amountToUse) 
+            + void PrepareToShutdown()
+            + void CancelPrepareToShutdown()
+        }
+        note as usingNote
+            using PersistentMemoryFactoryPtr = std::shared_ptr<common::memory::PersistentMemoryFactory>
+            using IsRealTimePresentPredicate = std::function<bool(void)>
+            using ConfigurationPtr = common::configuration::Pointer
+        end note
+
+        Creditor --> usingNote
+        Creditor ..> Configuration
+        Creditor ..> PersistentMemoryFactory
+
+    }
+}
+
+@enduml

@@ -1,0 +1,29 @@
+{
+  "Application_manifest": {
+    "Version_info": {
+      "Pluget_build_git_version": "RFI_ADG-1.4.14_1",
+      "Pluget_build_date": "28-03-2023 13:37:08"
+    },
+    "Application_manifest_id": "AdaptiveAutosarApplication_brain",
+    "Process": [
+      {
+        "Process_name": "brain",
+        "Mode_dependent_startup_configs": [
+          {
+            "Execution_dependency": [],
+            "Mode_in_machine_instance_refs": [
+              {
+                "Function_group": "MachineState",
+                "Mode": "Startup"
+              },
+              {
+                "Function_group": "MachineState",
+                "Mode": "Running"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

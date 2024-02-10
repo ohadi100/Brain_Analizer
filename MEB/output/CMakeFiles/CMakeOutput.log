@@ -1,0 +1,126 @@
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_13208/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_13208.dir/build.make CMakeFiles/cmTC_13208.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_13208.dir/CheckIncludeFile.cxx.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING  -fPIE   -fstack-protector-strong -std=c++14 -o CMakeFiles/cmTC_13208.dir/CheckIncludeFile.cxx.o -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_13208
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13208.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING     CMakeFiles/cmTC_13208.dir/CheckIncludeFile.cxx.o  -o cmTC_13208 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_15008/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_15008.dir/build.make CMakeFiles/cmTC_15008.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_15008.dir/CheckSymbolExists.cxx.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING  -fPIE   -fstack-protector-strong -std=c++14 -o CMakeFiles/cmTC_15008.dir/CheckSymbolExists.cxx.o -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_15008
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15008.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING     CMakeFiles/cmTC_15008.dir/CheckSymbolExists.cxx.o  -o cmTC_15008 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+
+File /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_21cb5/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_21cb5.dir/build.make CMakeFiles/cmTC_21cb5.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_21cb5.dir/CheckIncludeFile.cxx.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING  -fPIE   -fstack-protector-strong -std=c++14 -o CMakeFiles/cmTC_21cb5.dir/CheckIncludeFile.cxx.o -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_21cb5
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21cb5.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING     CMakeFiles/cmTC_21cb5.dir/CheckIncludeFile.cxx.o  -o cmTC_21cb5 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_6073c/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_6073c.dir/build.make CMakeFiles/cmTC_6073c.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6073c.dir/CheckSymbolExists.cxx.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING  -fPIE   -fstack-protector-strong -std=c++14 -o CMakeFiles/cmTC_6073c.dir/CheckSymbolExists.cxx.o -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_6073c
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6073c.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING     CMakeFiles/cmTC_6073c.dir/CheckSymbolExists.cxx.o  -o cmTC_6073c -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+
+File /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_fd1a2/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_fd1a2.dir/build.make CMakeFiles/cmTC_fd1a2.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fd1a2.dir/CheckIncludeFile.cxx.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING  -fPIE   -fstack-protector-strong -std=c++14 -o CMakeFiles/cmTC_fd1a2.dir/CheckIncludeFile.cxx.o -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_fd1a2
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd1a2.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING     CMakeFiles/cmTC_fd1a2.dir/CheckIncludeFile.cxx.o  -o cmTC_fd1a2 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/ohad/icas-1-sdk/sysroot/usr/bin/make" "cmTC_af4f5/fast"
+/home/ohad/icas-1-sdk/sysroot/usr/bin/make -f CMakeFiles/cmTC_af4f5.dir/build.make CMakeFiles/cmTC_af4f5.dir/build
+make[1]: Entering directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_af4f5.dir/CheckSymbolExists.cxx.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include -isystem /toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/include-fixed -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0 -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include/c++/10.2.0/aarch64-poky-linux -isystem /toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux/usr/include  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING  -fPIE   -fstack-protector-strong -std=c++14 -o CMakeFiles/cmTC_af4f5.dir/CheckSymbolExists.cxx.o -c /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_af4f5
+/home/ohad/icas-1-sdk/sysroot/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af4f5.dir/link.txt --verbose=1
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/cortexa57-cortexa53-poky-linux -D_QEMU_ARM64_EVO -Wall -std=c++14 -pthread -fstack-protector-strong -ffunction-sections -fdata-sections -DARA_COM_SIMPLE_UTF8_STRING_SERIALIZATION -DARA_COM_DEFAULT_STRUCT_LENGTH_FIELD_4BYTES -Werror -Wextra -Wno-return-type -pedantic -fdiagnostics-color=always -Wno-sized-deallocation -ggdb -Wl,-z,relro,-z,now -pthread -Wall -D_GLIBCXX_USE_NANOSLEEP -Wno-error=type-limits -DLINUX -DHAS_VSOMEIP_BINDING     CMakeFiles/cmTC_af4f5.dir/CheckSymbolExists.cxx.o  -o cmTC_af4f5 -lgtest -lgmock -lpthread 
+make[1]: Leaving directory '/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp'
+
+File /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

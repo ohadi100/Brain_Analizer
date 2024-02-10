@@ -1,0 +1,64 @@
+{
+ "schemaVersion": "0.1",
+ "id": "dbc5cfcb-8ebe-48e2-b2cd-181e641f9451",
+ "timestamp": 0,
+ "constraintId": "f04b880f-24b7-461f-84e0-595ee442ee40",
+ "type": 2,
+ "baseSuvElements": [
+ 	"d7d0576d-ad4c-4041-98b4-d76fb2413e48"
+ ],
+ "additional info": {
+	 "dataSets": [
+		 {
+			 "baseSuvElementId": "d7d0576d-ad4c-4041-98b4-d76fb2413e48",
+			 "dataItems": [
+				 {
+					 "reference": "dacq/4b06fb36-d267-4789-bc26-c85ad0f0d45c/cfb28af4-9f00-47db-b8fec2455105ce39",
+					 "value": [
+						 {
+							 "id": 0,
+							"value": 1.0
+						 },
+						 {
+							 "id": 1,
+							"value": 0.0
+						 },
+						 {
+							 "id": 2,
+							"value": 1.0
+						 },
+						 {
+							 "id": 3,
+							"value": 1608122460161.0
+						 },
+						 {
+							 "id": 4,
+							"value": "OfferService"
+						 },
+						 {
+							 "id": 5,
+							"value": ""
+						 },
+						 {
+							 "id": 6,
+							"value": 9999.0
+						 },
+						 {
+							 "id": 7,
+							"value": 4919.0
+						 },
+						 {
+							 "id": 8,
+							 "value": "2001:db8::1"
+						 }
+					 ]
+				 }
+			 ]
+		 }
+	 ],
+	 "unresolvableReferences": []
+},
+ "categories": [
+ "Security"
+ ]
+}

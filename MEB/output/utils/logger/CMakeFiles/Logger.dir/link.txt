@@ -1,0 +1,2 @@
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-ar qc ../../libs/libLogger.a  CMakeFiles/Logger.dir/Logger.cpp.o CMakeFiles/Logger.dir/LogEntity.cpp.o
+/home/ohad/icas-1-sdk/toolchains/qemu-arm64-evo/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-ranlib ../../libs/libLogger.a

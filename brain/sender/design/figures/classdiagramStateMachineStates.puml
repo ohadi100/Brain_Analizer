@@ -1,0 +1,91 @@
+@startuml classDiagramStateMachineStates
+title State machine states 
+skin rose
+package common
+{
+    package Utils
+    {
+        class StateMachine
+        {
+            + StateMachine(const char* name, unsigned int maxStates, unsigned int maxEvents, unsigned int state= 0, DebugNotificationStateEventCallback notificationStateEvent = nullptr)
+            + bool InitTransition(unsigned int state,const char*  currentStateName,unsigned int event,const char* eventName,unsigned int newSate,const char* newStateName,OnEventCallback action)
+            + bool postEvent(Event::Type event)
+            + template <class T> bool postEvent(Event::Type event, T* data)
+            + static bool nop(StateMachine* stateMachine, void*)
+            + static bool nop2(StateMachine* stateMachine, void*)
+            + constexpr unsigned int getState() const
+            + constexpr const char* getStateName() const
+            + unsigned int getNumOfStates() const
+            + constexpr unsigned int getEvent() const
+            + constexpr const char* getEventName() const
+            + unsigned int getNumOfEvents() const
+            + bool getTransitionHistoryByIndex(unsigned int index, unsigned int& state, unsigned int& event)
+            + void printHistory()
+            + bool nop(void*)
+            + bool nop2(void*)
+        }
+    }
+}
+package brain
+{
+    class BaseState
+        {
+            + {static} void DebugStateEventNotification(unsigned int& oldState,\n unsigned int& newState,\n unsigned int& event, \nbool transition)
+            + {static} void UseCredit(StateMachineBase* sm)
+            + {static} bool OnConnected(StateMachineBase* sm, void* data)
+            + {static} bool OnDisable(StateMachineBase* sm, void* data)
+            + {static} bool OnDisconnected(StateMachineBase* sm, void* data)
+            
+        }
+
+        class StateInit
+        {
+            + {static} bool OnConnect(StateMachineBase* sm, void* data)
+        }
+        StateInit --|> BaseState
+        StateInit ..> StateMachine
+
+
+        class StateConnecting
+        StateConnecting --|> BaseState
+        StateConnecting ..> StateMachine
+
+
+        class StateReadyToSend
+        {
+            + {static} bool OnSendData(StateMachineBase* sm, void* data)
+        }
+        StateReadyToSend --|> BaseState
+        StateReadyToSend ..> StateMachine 
+
+
+        class StateWaitAck
+        {
+            + {static} bool OnAckOk(StateMachineBase* sm, void* data)
+            + {static} bool OnAckOkWithTO(StateMachineBase* sm, void* data)
+            + {static} bool OnAckOkWithTOExpired(StateMachineBase* sm, void* data)
+            + {static} bool OnAckRetry(StateMachineBase* sm, void* data)
+            + {static} bool OnAckRetryWithTO(StateMachineBase* sm, void* data)
+        }
+        StateWaitAck --|> BaseState 
+        StateWaitAck ..> StateMachine
+
+
+        class StateRetry
+        {
+            + {static} bool OnReSendData(StateMachineBase* sm, void* data)
+            + {static} bool OnMaxRetry(StateMachineBase* sm, void* data)
+        }
+        StateRetry --|> BaseState 
+        StateRetry ..> StateMachine
+
+
+        class StateDisabled
+        {
+            + {static} bool OnEnable(StateMachineBase* sm, void* data)
+        }
+        StateDisabled --|> BaseState
+        StateDisabled ..> StateMachine
+    
+}
+    

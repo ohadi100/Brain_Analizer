@@ -1,0 +1,80 @@
+{
+  "Application": {
+    "Version_info": {
+      "Pluget_build_git_version": "RFI_ADG-1.4.14_1",
+      "Pluget_build_date": "28-03-2023 13:37:08"
+    },
+    "Instance_id": "brain",
+    "Supervision_entities": [
+      {
+        "Process": "brain",
+        "Supervision_entity_id": 6004,
+        "Alive_supervisions": [
+          {
+            "Checkpoint_id": 6004,
+            "Expected_alive_indications": 5,
+            "Max_margin": 1000,
+            "Min_margin": 4,
+            "Supervision_cycle": 600
+          }
+        ],
+        "Deadline_supervisions": [],
+        "Logical_supervisions": [],
+        "Failed_alive_supervision_cycle_tolerance": 50
+      }
+    ],
+    "Expired_supervision_cycle_tolerance": 1,
+    "Health_channels": [
+      {
+        "Channel_id": 555,
+        "Channel_name": "HealthChannelExternalMode",
+        "Mode_init_value": 222,
+        "Modes": [
+          1,
+          2,
+          3,
+          12,
+          222
+        ]
+      }
+    ],
+    "Health_channel_supervisions": [
+      {
+        "Supervision_condition": 3,
+        "Channel_name": "HealthChannelSupervisionCymotive",
+        "Supervision": 6004
+      }
+    ],
+    "Rules": [
+      {
+        "Name": "RuleForSomething",
+        "Evaluable_expression": {
+          "Name": "LogicalExpressionCymotive",
+          "Sub_expressions": [
+            {
+              "Condition_type": "isStopped",
+              "Instance_id": "brain",
+              "Expression_type": "Mode_condition"
+            }
+          ],
+          "Expression_type": "Logical_expression",
+          "Logical_operator": "and"
+        },
+        "True_action_list": {
+          "Execution": "TRIGGERED-ON-CHANGE",
+          "Actions": [
+            {
+              "Callback_function": "cb_A0_brain_01",
+              "Type": "Callback",
+              "Order": 0
+            }
+          ]
+        },
+        "False_action_list": {
+          "Execution": "TRIGGERED-ON-CHANGE",
+          "Actions": []
+        }
+      }
+    ]
+  }
+}
