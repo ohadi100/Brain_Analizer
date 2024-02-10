@@ -1,0 +1,39 @@
+@startuml classDiagramPublisher
+title Publisher Class Diagram
+package brain
+{
+    interface PublisherInterface 
+    {
+        {abstract} bool Connect(std::function<void(EventType)> = nullptr)
+        {abstract} bool Disconnect()
+        {abstract} bool SendMessage(std::shared_ptr<std::vector<uint8_t>> msgPayload)
+    }
+    note top of PublisherInterface
+    namespace missing in the code
+    end note
+    package publishers
+    {
+        package gdc_publisher
+        {
+           class GDCPublisher
+           GDCPublisher --|> PublisherInterface
+        }
+        note bottom of gdc_publisher
+        same for ssp_publisher, https_publisher
+        end note
+
+        package utils
+        {
+            class ExceededMessageSizeCheck
+            {
+                + ExceededMessageSizeCheck(ConfigurationPtr configuration)
+                + bool IsValid(std::size_t msgSize)
+                + Serialize(\ncom_vwg_connect_ids_idsperiodicreport_v1_ExceededMaxMessageSizeToIepDropEntryList& entry) 
+                + void Clear()
+            }
+            ExceededMessageSizeCheck --> Configuration
+        }
+
+    }
+}
+@enduml

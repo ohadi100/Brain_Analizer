@@ -1,0 +1,81 @@
+{
+  "Machine_manifest": {
+    "Version_info": {
+      "Pluget_build_git_version": "RFI_ADG-1.4.14_1",
+      "Pluget_build_date": "28-03-2023 13:37:08"
+    },
+    "Machine_manifest_id": "device_brain",
+    "Enter_exit_timeout": [
+      {
+        "Enter_timeout_value": 4.0,
+        "Exit_timeout_value": 5.0
+      }
+    ],
+    "Mode_declaration_group": [
+      {
+        "Function_group_name": "ModeDeclarationGroup_brain",
+        "Mode_declarations": [
+          {
+            "Mode": "Startup"
+          },
+          {
+            "Mode": "Shutdown"
+          },
+          {
+            "Mode": "Restart"
+          },
+          {
+            "Mode": "Off"
+          },
+          {
+            "Mode": "Running"
+          }
+        ]
+      },
+      {
+        "Function_group_name": "ModeDeclarationGroup",
+        "Mode_declarations": [
+          {
+            "Mode": "ModeDeclarationBrain"
+          },
+          {
+            "Mode": "Reference_valueBrain"
+          },
+          {
+            "Mode": "Startup"
+          },
+          {
+            "Mode": "Shutdown"
+          },
+          {
+            "Mode": "Restart"
+          }
+        ]
+      }
+    ],
+    "Per_state_timeouts": [
+      {
+        "State": {
+          "Mode": "Startup"
+        },
+        "Timeout": {
+          "Enter_timeout_value": 2.0,
+          "Exit_timeout_value": 2.0
+        }
+      }
+    ],
+    "Process_to_machine_mapping_set": [
+      {
+        "Process_to_machine_mappings": [
+          {
+            "Process_ref": "brain",
+            "Process_timeout": {
+              "Enter_timeout_value": 5.0,
+              "Exit_timeout_value": 5.0
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+ "schemaVersion": "0.1",
+ "id": "3f1c9c8f-8968-43f5-a9f7-b6a8044cc786",
+ "timestamp": 0,
+ "constraintId": "bcbca09c-5662-46da-b1c3-8e9efb0b9e15",
+ "type": 0,
+ "baseSuvElements": [
+ "18888bb3-4f4f-4d18-b316-c6c6429aa22d"
+ ],
+	 "additional info": {
+	 "dataSets": [
+		 {
+			 "baseSuvElementId": "18888bb3-4f4f-4d18-b316-c6c6429aa22d",
+			 "dataItems": [
+		 {
+			 "reference": "dacq/7b4ba445-f8ce-47c5-99be-2773e4f7da3a/765e7e8b-e09b-4fb1-8079-a40978b71d46",
+			 "value": 523.0
+		 },
+		 {
+			 "attr/7b4ba445-f8ce-47c5-99be-2773e4f7da3a/protocol",
+			"value": 17
+		 },
+		 {
+			 "reference": "attr/7b4ba445-f8ce-47c5-99be-2773e4f7da3a/direction",
+			"value": 0
+		 },
+		 {
+			 "reference": "attr/7b4ba445-f8ce-47c5-99be-2773e4f7da3a/port",
+			"value": 42557
+		 }
+ 	]
+ }
+ ],
+ 	"unresolvableReferences": []
+ },
+	 "categories": [
+	 "Security"
+ ]
+}

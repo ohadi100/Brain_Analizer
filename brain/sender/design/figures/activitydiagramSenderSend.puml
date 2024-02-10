@@ -1,0 +1,32 @@
+@startuml
+title Send data
+start
+
+if (Message repository empty ?) then (no)
+    :Pop data from message repository;
+else(yes)
+stop
+endif
+
+if (Should serialize ?) then (yes)
+    : Serialize data;
+else(no)
+endif
+
+if (Message size valid ?) then (yes)
+    else(no)
+stop
+endif
+
+if( Credits available ?) then (yes)
+repeat 
+    :send message;
+repeat while(NOK or Timeout acknowledgement and retry limit not exceeded) is (yes)
+->no;
+else (no)
+stop
+endif
+
+
+stop
+@enduml

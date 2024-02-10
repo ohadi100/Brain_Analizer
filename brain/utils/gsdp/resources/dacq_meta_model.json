@@ -1,0 +1,633 @@
+{
+  "schemaVersion": "0.0.1",
+  "metaDacqSets": [
+    {
+      "metaId": "c7179dbc-a9ba-458c-8b0d-ce368c139767",
+      "coreMetaId": "393cc2c6-e412-4414-9d72-65df787487ef",
+      "values": [
+        {
+          "metaId": "a7178255-99ff-4718-aa93-d933bd30023e",
+          "temporalCharacteristic":"CONTINUOUS",
+          "name": "CpuUtilization",
+          "unit": "Percent",
+          "type":"uint32",
+          "precision": 0,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "metaId": "12f43252-5a9a-4836-a5fa-ed89a454e8ab",
+          "name": "RamUtilization",
+          "temporalCharacteristic":"CONTINUOUS",
+          "unit": "Percent",
+          "type":"uint32",
+          "precision": 0,
+          "min": 0,
+          "max": 100
+        }
+      ]
+    },
+    {
+      "metaId": "86cbf766-146d-4596-b3bf-2c0c23133510",
+      "coreMetaId": "7ed8bdd6-0ebc-4a2c-bc0a-57b314310329",
+      "values": [
+        {
+          "metaId" : "57c9b247-cae6-48e4-9a4e-cf56846ad1e9",
+          "name" : "LogMessage",
+          "temporalCharacteristic": "DISCRETE",
+          "type" : "struct",
+          "fields" : [
+            {
+              "id" : 0,
+              "name" : "timestamp",
+              "type" : "uint64"
+            },
+            { "id" : 1,
+              "name" : "message",
+              "type" : "string"
+            },
+            { "id" : 2,
+              "name" : "loglevel",
+              "type" : "uint32",
+              "unit" : "none",
+              "precision" : 0
+            },
+            { "id" : 3,
+              "name" : "facility",
+              "type" : "uint32",
+              "unit" : "none",
+              "precision" : 0
+            }
+          ]
+        },
+        {
+          "metaId": "59cfaccb-1495-4259-8e85-c2d9728d286a",
+          "name": "LogStatus",
+          "temporalCharacteristic":"CONTINUOUS",
+          "type" : "uint32",
+          "unit": "none",
+          "precision": 0,
+          "min":0,
+          "max":1
+        }
+      ]
+    },
+    {
+      "metaId": "94cedcc9-9f21-4bed-8266-c2ae23722294",
+      "coreMetaId": "ce7cece3-fb3f-4397-b2aa-cda4761322da",
+      "values": [
+        {
+          "metaId": "e130c929-61e1-4da5-95a0-07f1522c6cfa",
+          "name": "CpuUtilization",
+          "temporalCharacteristic":"CONTINUOUS",
+          "unit": "Percent",
+          "type":"uint32",
+          "precision": 0,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "metaId": "8cbfebe3-26be-4679-bc68-e474345f3151",
+          "name": "Memory Consumption",
+          "temporalCharacteristic":"CONTINUOUS",
+          "unit": "Percent",
+          "type":"uint32",
+          "precision": 0
+        },
+        {
+          "metaId": "22ab171a-bded-49fe-93a5-2d2153fc4009",
+          "name": "Process List Changed",
+          "temporalCharacteristic":"DISCRETE",
+          "unit": "Event",
+          "type":"uint32",
+          "precision": 0
+        }
+      ]
+    },
+    { "metaId" : "af48b68b-6b48-47a5-ae6d-61fcee922e1d",
+      "coreMetaId" : "92d58a6e-4860-409c-9566-31cdb52a80e6",
+      "values" : [
+          { "metaId" : "0f6ef590-4395-49c8-8a8e-317ca3976e31",
+            "name" : "DroppedPacketFields",
+            "temporalCharacteristic": "DISCRETE",
+            "type" : "struct",
+            "fields" : [
+              { "id" : 0,
+                "name" : "sourceMAC",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 1,
+                "name" : "lenght",
+                "type" : "uint64",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 2,
+                "name" : "nextHeader",
+                "type" : "uint64",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 3,
+                "name" : "sourceAdress",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 4,
+                "name" : "destAdress",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 5,
+                "name" : "sourcePort",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 6,
+                "name" : "targetPort",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 7,
+                "name" : "icmpType",
+                "type" : "uint64",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 8,
+                "name" : "icmpCode",
+                "type" : "uint64",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 9,
+                "name" : "timeStampMillis",
+                "type" : "uint64",
+                "unit" : "none",
+                "precision" : 0
+              }
+            ],
+            "unit" : "none",
+            "precision" : 0
+          }
+      ]
+    },
+    {
+      "metaId" : "0b66ba90-c443-4ffa-b60a-455190b49843",
+      "coreMetaId" : "7b4ba445-f8ce-47c5-99be-2773e4f7da3a",
+      "values" : [
+          { "metaId" : "765e7e8b-e09b-4fb1-8079-a40978b71d46",
+            "name" : "packetCount",
+            "type" : "uint64",
+            "unit" : "none",
+            "precision" : 0,
+            "temporalCharacteristic":"CONTINUOUS"
+          }
+      ]
+    },
+    { "metaId" : "9d56e178-9aec-4b19-b1ec-75be07e55ed1",
+      "coreMetaId" : "5efd8d60-d620-4055-aca9-41f59ac50986",
+      "values" : [
+          { "metaId" : "4757a59c-0857-421c-b5ba-a63d52c6ea7e",
+            "name" : "HostFileMonitorFields",
+            "type" : "struct",
+            "temporalCharacteristic": "DISCRETE",
+            "fields" : [
+              { "id" : 0,
+                "name" : "filePath",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 1,
+                "name" : "changeType",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 2,
+                "name" : "timeStamp",
+                "type" : "uint64",
+                "unit" : "none",
+                "precision" : 0
+              }
+            ],
+            "unit" : "none",
+            "precision" : 0
+          }
+      ]
+    },
+    { "metaId" : "6d8e5772-b31a-4df4-a6a4-4abe8e6741e3",
+      "coreMetaId" : "9446b4d9-6998-43ee-9f10-08a9ecd45535",
+      "values" : [
+          { "metaId" : "42399f48-4281-4069-8648-6045d7e6cd3d",
+            "name" : "TLSErrorReport",
+            "temporalCharacteristic": "DISCRETE",
+            "type" : "struct",
+            "fields" : [
+              { "id" : 0,
+                "name" : "componentId",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 1,
+                "name" : "timeStamp",
+                "type" : "uint64",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 2,
+                "name" : "clientIp",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 3,
+                "name" : "serverIp",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 4,
+                "name" : "clientPort",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 5,
+                "name" : "serverPort",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 6,
+                "name" : "protocol",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 7,
+                "name" : "failureReason",
+                "type" : "int32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 8,
+                "name" : "tlsIdentity",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              }
+            ],
+            "unit" : "none",
+            "precision" : 0
+          }
+      ]
+    },
+    { "metaId" : "44cd0df4-3eea-444b-8cb5-2aef0b9c72f4",
+      "coreMetaId" : "4b06fb36-d267-4789-bc26-c85ad0f0d45c",
+      "values" : [
+          { "metaId" : "cfb28af4-9f00-47db-b8fe-c2455105ce39",
+            "name" : "SRMReport SOMEIP",
+            "temporalCharacteristic": "DISCRETE",
+            "type" : "struct",
+            "unit" : "none",
+            "precision" : 0,
+            "fields" : [
+              { "id" : 0,
+                "name" : "aggregationCount",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 1,
+                "name" : "reportType",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 2,
+                "name" : "serviceRegistryId",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 3,
+                "name" : "timeStamp",
+                "type" : "uint64",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 4,
+                "name" : "type",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 5,
+                "name" : "applicationId",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 6,
+                "name" : "serviceId",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 7,
+                "name" : "serviceInstanceId",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 8,
+                "name" : "serverIp",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              }
+            ]
+          },
+          { "metaId" : "deec01bb-2101-46b4-94ac-71cacdf5e73a",
+            "name" : "SRMReport PIF",
+            "temporalCharacteristic": "DISCRETE",
+            "type" : "struct",
+            "unit" : "none",
+            "precision" : 0,
+            "fields" : [
+              { "id" : 0,
+                "name" : "aggregationCount",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 1,
+                "name" : "reportType",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 2,
+                "name" : "serviceRegistryId",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 3,
+                "name" : "timeStamp",
+                "type" : "uint64",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 4,
+                "name" : "type",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 5,
+                "name" : "applicationId",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 6,
+                "name" : "serviceReference",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 7,
+                "name" : "serviceInstanceReference",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              }
+            ]
+          },
+          { "metaId" : "5a847f7b-f48d-432a-829e-8f0f77ee39cf",
+            "name" : "SRMReport VIWI",
+            "temporalCharacteristic": "DISCRETE",
+            "type" : "struct",
+            "unit" : "none",
+            "precision" : 0,
+            "fields" : [
+              { "id" : 0,
+                "name" : "aggregationCount",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 1,
+                "name" : "reportType",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 2,
+                "name" : "serviceRegistryId",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 3,
+                "name" : "timeStamp",
+                "type" : "uint64",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 4,
+                "name" : "type",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 5,
+                "name" : "applicationId",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 6,
+                "name" : "serviceName",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 7,
+                "name" : "serverIp",
+                "type" : "string",
+                "unit" : "none",
+                "precision" : 0
+              },
+              { "id" : 8,
+                "name" : "port",
+                "type" : "uint32",
+                "unit" : "none",
+                "precision" : 0
+              }
+           ]
+         }
+      ]
+    },
+    { "metaId" : "96d0c016-2978-4d7b-a5dd-d7fff91044b4",
+      "coreMetaId" : "a7fc69af-0efb-4088-a8f4-e4f5801e7ddf",
+      "values" : [
+          { "metaId" : "241f8319-fa1b-484f-a2f7-24d8d8238e90",
+            "name" : "PHM Action Count",
+            "temporalCharacteristic": "DISCRETE",
+            "type" : "uint64",
+            "unit" : "none",
+            "precision" : 0
+          }
+       ]
+    },
+    { "metaId" : "c1f02b5d-be5e-479a-b7f9-e2b173366fbc",
+      "coreMetaId" : "290fe4c6-91fd-41d5-b70d-f85b2823aeb5",
+      "values" : [
+        {
+          "metaId" : "b4843d29-4d1f-44be-9e80-3b1ca353f7e3",
+          "name" : "Service Availability Status",
+          "temporalCharacteristic" : "DISCRETE",
+          "type" : "uint32",
+          "unit" : "none",
+          "precision" : 0,
+          "min" : 0,
+          "max" : 2
+        }
+      ]
+     }
+  ],
+  "algorithms": [
+    {
+      "metaId" : "62ea8469-bb4f-4380-b032-eaef6d3cf851",
+      "description" : "upper threshold",
+      "name" : "LessThan",
+      "supportedTypes" : ["int32", "uint32", "int64", "uint64"],
+      "outputType" : "bool",
+      "params": [
+            { "name": "ThresholdValue" },
+            { "name" : "Hysteresis", "min":0, "max": 100, "default":0, "type" : "uint32"}
+      ]
+    },
+    {
+      "metaId" : "d308ca74-3c90-47f1-97ba-43e91a23c995",
+      "description" : "lower threshold",
+      "name" : "GreaterThan",
+      "supportedTypes" : ["int32", "uint32", "int64", "uint64"],
+      "outputType" : "bool",
+      "params": [
+            { "name": "ThresholdValue" },
+            { "name" : "Hysteresis", "min":0, "max": 100, "default":0, "type" : "uint32"}
+      ]
+    },
+    {
+      "metaId" : "6731a44c-2a95-4b98-adf8-6ccc892c5d3d",
+      "description" : "count",
+      "name" : "Count",
+      "supportedTypes" : [],
+      "outputType" : "int64",
+      "params": [
+      ]
+    },
+    {
+      "metaId" : "72e4acc4-806b-44ce-b75c-2d6b3b91f191",
+      "description" : "Integer Equals",
+      "name" : "IntEquals",
+      "supportedTypes" : ["int32", "uint32", "int64", "uint64"],
+      "outputType" : "bool",
+      "params": [
+            { "name" : "Value"}
+      ]
+    },
+    {
+      "metaId" : "4e3d725a-f189-11e9-81b4-2a2ae2dbcce4",
+      "description" : "Regular Expression",
+      "name" : "StringMatches",
+      "supportedTypes" : ["string"],
+      "outputType" : "bool",
+      "params" : [
+            { "name" : "RegEx",
+              "type" : "string" }
+      ]
+    },
+    {
+      "metaId" : "fb289354-c670-41d6-a56c-72a8b5002b8f",
+      "description" : "boolean logical AND operator",
+      "name" : "AND",
+      "supportedTypes" : ["bool"],
+      "supportedTypes" : ["bool"],
+      "outputType" : "bool",
+      "params": []
+    },
+    {
+      "metaId" : "d510b134-7e7a-41e0-b186-b0cb031f19f2",
+      "description" : "boolean logical OR operator",
+      "name" : "OR",
+      "supportedTypes" : ["bool"],
+      "outputType" : "bool",
+      "params": []
+    },
+    {
+      "metaId" : "cfeda1a8-6400-4a77-ac05-da7ac642f764",
+      "description" : "boolean logical NOT operator",
+      "name" : "NOT",
+      "supportedTypes" : ["bool"],
+      "outputType" : "bool",
+      "params": []
+    },
+    {
+      "metaId" : "15c7e169-97c4-4731-a1b9-b6c6013842ef",
+      "description" : "time hysteresis",
+      "name" : "THYST",
+      "outputType" : "bool",
+      "supportedTypes" : ["bool"],
+      "params": [
+          {"name":"requiredTimeToTrue", "type":"uint64"},
+          {"name":"requiredTimeToFalse", "type":"uint64"}
+      ]
+    },
+    {
+      "metaId" : "5a90d488-4273-4a06-bdcc-8480f4259952",
+      "description" : "Modulo Calculation",
+      "name" : "Modulo",
+      "supportedTypes" : ["int32", "int64", "uint32", "uint64"],
+      "outputType" : "uint64",
+      "params": [
+            { "name" : "Divisor"}
+      ]
+    }
+  ],
+  "metaReActions" : [
+    { "metaId" : "fa4575f5-cb88-4fb5-ae68-6db23905e99d",
+      "description" : "Create Incident Action",
+      "params" : [
+        { "name" : "category", "type" : "string" },
+        { "name" : "log_level", "type" : "uint32", "default":6, "min":1, "max":6 },
+        { "name" : "log_message", "type" : "string", "default": "" },
+        { "name" : "log_context", "type" : "string", "default": "" },
+        { "name" : "log_context_desc", "type" : "string", "default": "" },
+        { "name" : "Additional Info", "type" : "references" }
+      ]
+    },
+    { "metaId" : "0be00328-96a2-11ea-bb37-0242ac130002",
+      "description" : "Create Log Action",
+      "params" : [
+        { "name" : "log_level", "type" : "uint32", "min":1, "max":6 },
+        { "name" : "log_message", "type" : "string" },
+        { "name" : "log_context", "type" : "string" },
+        { "name" : "log_context_desc", "type" : "string" },
+        { "name" : "Additional Info", "type" : "references" }
+      ]
+    }
+  ]
+}

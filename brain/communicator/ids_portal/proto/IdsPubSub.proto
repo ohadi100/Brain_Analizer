@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package portal.ids.secevent;
+
+message IdsEvent {
+  bytes payload = 1;
+}
+
+message Empty {
+}
+
+service IdsAgent {
+  rpc PublishIdsEvent(IdsEvent) returns (Empty);
+  rpc SubscribeIdsEvent(Empty) returns (stream IdsEvent);
+}

@@ -1,0 +1,58 @@
+{
+  "version_info": {
+    "pluget_build_git_version": "RFI_ADG-1.4.14_1",
+    "pluget_build_date": "28-03-2023 13:37:08"
+  },
+  "application_id": "brain",
+  "ports": [
+    {
+      "port_name": "ids_brain_priority0_events",
+      "write_limits": {
+        "soft": 300000000,
+        "hard": 300000001
+      }
+    },
+    {
+      "port_name": "ids_brain_priority1_events",
+      "write_limits": {
+        "soft": 300000000,
+        "hard": 300000001
+      }
+    },
+    {
+      "port_name": "ids_brain_priority2_events",
+      "write_limits": {
+        "soft": 300000000,
+        "hard": 300000001
+      }
+    },
+    {
+      "port_name": "ids_brain_priority3_events",
+      "write_limits": {
+        "soft": 300000000,
+        "hard": 300000001
+      }
+    },
+    {
+      "port_name": "ids_brain_creditor",
+      "write_limits": {
+        "soft": 300000000,
+        "hard": 300000001
+      }
+    },
+    {
+      "port_name": "ids_brain_configurationData",
+      "write_limits": {
+        "soft": 300000000,
+        "hard": 300000001
+      }
+    },
+    {
+      "port_name": "ids_brain_coredump_analyzer",
+      "write_limits": {
+        "soft": 300000000,
+        "hard": 300000001
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+PROJECT_NAME           = "brain"
+PROJECT_NUMBER         = ..
+STRIP_FROM_PATH        = /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain \
+                         /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain
+INPUT                  =  \
+                         /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain \
+                         /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain
+FILE_PATTERNS          = *.h \
+			 *.c \
+                         *.cc \
+			 *.cpp \
+			 *.hpp \
+                         *.md
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = README.md
+OUTPUT_DIRECTORY       = /home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/output/doxygen
+EXCLUDE                = CMakeFiles
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES

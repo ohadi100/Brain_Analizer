@@ -1,0 +1,536 @@
+{
+  "generator_version": "RFI_ADG-1.4.14_1",
+  "manifest_version_major": 1,
+  "manifest_version_minor": 0,
+  "sd_multicast_ip_address": "ff14:0:0:0:0:0:4:0",
+  "provided_service_instances": [
+    {
+      "internal_instance_id": "IDSBrainProxyRelay_ProvidedSomeipServiceInstance",
+      "internal_service_id": "vwg::services::idsbrainproxyrelay::IDSBrainProxyRelay",
+      "sd_provided_service_timing": {
+        "initial_delay_max": 0,
+        "initial_delay_min": 0,
+        "offer_cyclic_delay": 1000,
+        "repetitions_base_delay": 100,
+        "repetitions_max": 3,
+        "request_response_delay_max": 0,
+        "request_response_delay_min": 0,
+        "time_to_live": 3
+      },
+      "someip_instance_id": 1,
+      "someip_interface_id": 24715,
+      "someip_interface_major_version": 1,
+      "someip_interface_minor_version": 0,
+      "tcp_port": 29190,
+      "provided_event": [
+        {
+          "internal_id": 0,
+          "send_on_subscribe": true,
+          "someip_id": 49184,
+          "transport_protocol": [
+            "tcp"
+          ]
+        },
+        {
+          "internal_id": 1,
+          "send_on_subscribe": true,
+          "someip_id": 49168,
+          "transport_protocol": [
+            "tcp"
+          ]
+        }
+      ],
+      "provided_eventgroup": [
+        {
+          "handle_id": 0,
+          "multicast_threshold": 0,
+          "someip_id": 49168,
+          "events": [
+            1
+          ]
+        },
+        {
+          "handle_id": 1,
+          "multicast_threshold": 0,
+          "someip_id": 49184,
+          "events": [
+            0
+          ]
+        }
+      ],
+      "provided_method": [
+        {
+          "internal_id": 0,
+          "someip_id": 16416,
+          "transport_protocol": "tcp"
+        },
+        {
+          "internal_id": 1,
+          "someip_id": 16400,
+          "transport_protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "required_service_instances": [
+    {
+      "internal_instance_id": "IDSEthernetSensor_RequiredSomeipServiceInstance",
+      "internal_service_id": "vwg::services::idsethernetsensor::IDSEthernetSensor",
+      "sd_required_service_timing": {
+        "initial_delay_max": 10,
+        "initial_delay_min": 10,
+        "repetitions_base_delay": 200,
+        "repetitions_max": 3,
+        "time_to_live": 16777215
+      },
+      "someip_instance_id": 1,
+      "someip_interface_id": 24622,
+      "someip_interface_major_version": 2,
+      "someip_interface_minor_version": 0,
+      "udp_port": 0,
+      "required_event": [
+        {
+          "internal_id": 0,
+          "send_on_subscribe": true,
+          "someip_id": 49216,
+          "transport_protocol": [
+            "udp"
+          ]
+        },
+        {
+          "internal_id": 1,
+          "send_on_subscribe": true,
+          "someip_id": 49232,
+          "transport_protocol": [
+            "udp"
+          ]
+        },
+        {
+          "internal_id": 2,
+          "send_on_subscribe": true,
+          "someip_id": 49200,
+          "transport_protocol": [
+            "udp"
+          ]
+        },
+        {
+          "internal_id": 3,
+          "send_on_subscribe": true,
+          "someip_id": 49184,
+          "transport_protocol": [
+            "udp"
+          ]
+        },
+        {
+          "internal_id": 4,
+          "send_on_subscribe": true,
+          "someip_id": 49168,
+          "transport_protocol": [
+            "udp"
+          ]
+        }
+      ],
+      "required_eventgroup": [
+        {
+          "handle_id": 0,
+          "someip_id": 49168,
+          "time_to_live": 3,
+          "events": [
+            4
+          ]
+        },
+        {
+          "handle_id": 1,
+          "someip_id": 49184,
+          "time_to_live": 3,
+          "events": [
+            3
+          ]
+        },
+        {
+          "handle_id": 2,
+          "someip_id": 49200,
+          "time_to_live": 3,
+          "events": [
+            2
+          ]
+        },
+        {
+          "handle_id": 3,
+          "someip_id": 49216,
+          "time_to_live": 3,
+          "events": [
+            0
+          ]
+        },
+        {
+          "handle_id": 4,
+          "someip_id": 49232,
+          "time_to_live": 3,
+          "events": [
+            1
+          ]
+        }
+      ],
+      "required_method": [
+        {
+          "internal_id": 0,
+          "someip_id": 16448,
+          "transport_protocol": "udp"
+        },
+        {
+          "internal_id": 1,
+          "someip_id": 16464,
+          "transport_protocol": "udp"
+        },
+        {
+          "internal_id": 2,
+          "someip_id": 16432,
+          "transport_protocol": "udp"
+        },
+        {
+          "internal_id": 3,
+          "someip_id": 16416,
+          "transport_protocol": "udp"
+        },
+        {
+          "internal_id": 4,
+          "someip_id": 16400,
+          "transport_protocol": "udp"
+        }
+      ]
+    },
+    {
+      "internal_instance_id": "IDSSecurityEvent_RequiredSomeipServiceInstance",
+      "internal_service_id": "vwg::services::idssecurityevent::IDSSecurityEvent",
+      "sd_required_service_timing": {
+        "initial_delay_max": 10,
+        "initial_delay_min": 10,
+        "repetitions_base_delay": 200,
+        "repetitions_max": 3,
+        "time_to_live": 16777215
+      },
+      "someip_instance_id": 1,
+      "someip_interface_id": 25103,
+      "someip_interface_major_version": 2,
+      "someip_interface_minor_version": 0,
+      "tcp_port": 0,
+      "required_event": [
+        {
+          "internal_id": 0,
+          "send_on_subscribe": true,
+          "someip_id": 49168,
+          "transport_protocol": [
+            "tcp"
+          ]
+        }
+      ],
+      "required_eventgroup": [
+        {
+          "handle_id": 0,
+          "someip_id": 49168,
+          "time_to_live": 3,
+          "events": [
+            0
+          ]
+        }
+      ],
+      "required_method": [
+        {
+          "internal_id": 0,
+          "someip_id": 16400,
+          "transport_protocol": "tcp"
+        }
+      ]
+    },
+    {
+      "internal_instance_id": "Immobilizer_RequiredSomeipServiceInstance",
+      "internal_service_id": "vwg::services::immobilizer::Immobilizer",
+      "sd_required_service_timing": {
+        "initial_delay_max": 10,
+        "initial_delay_min": 10,
+        "repetitions_base_delay": 200,
+        "repetitions_max": 3,
+        "time_to_live": 16777215
+      },
+      "someip_instance_id": 1,
+      "someip_interface_id": 24578,
+      "someip_interface_major_version": 3,
+      "someip_interface_minor_version": 1,
+      "udp_port": 0,
+      "required_event": [
+        {
+          "internal_id": 0,
+          "send_on_subscribe": true,
+          "someip_id": 49168,
+          "transport_protocol": [
+            "udp"
+          ]
+        },
+        {
+          "internal_id": 1,
+          "send_on_subscribe": true,
+          "someip_id": 49184,
+          "transport_protocol": [
+            "udp"
+          ]
+        }
+      ],
+      "required_eventgroup": [
+        {
+          "handle_id": 0,
+          "someip_id": 49168,
+          "time_to_live": 3,
+          "events": [
+            0
+          ]
+        },
+        {
+          "handle_id": 1,
+          "someip_id": 49184,
+          "time_to_live": 3,
+          "events": [
+            1
+          ]
+        }
+      ],
+      "required_method": [
+        {
+          "internal_id": 0,
+          "someip_id": 16400,
+          "transport_protocol": "udp"
+        },
+        {
+          "internal_id": 1,
+          "someip_id": 16416,
+          "transport_protocol": "udp"
+        }
+      ]
+    },
+    {
+      "internal_instance_id": "Time_RequiredSomeipServiceInstance",
+      "internal_service_id": "vwg::services::time::Time",
+      "sd_required_service_timing": {
+        "initial_delay_max": 10,
+        "initial_delay_min": 10,
+        "repetitions_base_delay": 200,
+        "repetitions_max": 3,
+        "time_to_live": 16777215
+      },
+      "someip_instance_id": 1,
+      "someip_interface_id": 24585,
+      "someip_interface_major_version": 4,
+      "someip_interface_minor_version": 3,
+      "udp_port": 0,
+      "required_event": [
+        {
+          "internal_id": 0,
+          "send_on_subscribe": true,
+          "someip_id": 49168,
+          "transport_protocol": [
+            "udp"
+          ]
+        },
+        {
+          "internal_id": 1,
+          "send_on_subscribe": true,
+          "someip_id": 49184,
+          "transport_protocol": [
+            "udp"
+          ]
+        }
+      ],
+      "required_eventgroup": [
+        {
+          "handle_id": 0,
+          "someip_id": 49168,
+          "time_to_live": 3,
+          "events": [
+            0
+          ]
+        },
+        {
+          "handle_id": 1,
+          "someip_id": 49184,
+          "time_to_live": 3,
+          "events": [
+            1
+          ]
+        }
+      ],
+      "required_method": [
+        {
+          "internal_id": 0,
+          "someip_id": 16400,
+          "transport_protocol": "udp"
+        },
+        {
+          "internal_id": 1,
+          "someip_id": 16401,
+          "transport_protocol": "udp"
+        },
+        {
+          "internal_id": 2,
+          "someip_id": 16416,
+          "transport_protocol": "udp"
+        },
+        {
+          "internal_id": 3,
+          "someip_id": 16417,
+          "transport_protocol": "udp"
+        }
+      ]
+    },
+    {
+      "internal_instance_id": "IDSBrainProxyRelay_RequiredSomeipServiceInstance",
+      "internal_service_id": "vwg::services::idsbrainproxyrelay::IDSBrainProxyRelay",
+      "sd_required_service_timing": {
+        "initial_delay_max": 10,
+        "initial_delay_min": 10,
+        "repetitions_base_delay": 200,
+        "repetitions_max": 3,
+        "time_to_live": 16777215
+      },
+      "someip_instance_id": 2,
+      "someip_interface_id": 24715,
+      "someip_interface_major_version": 1,
+      "someip_interface_minor_version": 0,
+      "tcp_port": 0,
+      "required_event": [
+        {
+          "internal_id": 0,
+          "send_on_subscribe": true,
+          "someip_id": 49184,
+          "transport_protocol": [
+            "tcp"
+          ]
+        },
+        {
+          "internal_id": 1,
+          "send_on_subscribe": true,
+          "someip_id": 49168,
+          "transport_protocol": [
+            "tcp"
+          ]
+        }
+      ],
+      "required_eventgroup": [
+        {
+          "handle_id": 0,
+          "someip_id": 49168,
+          "time_to_live": 3,
+          "events": [
+            1
+          ]
+        },
+        {
+          "handle_id": 1,
+          "someip_id": 49184,
+          "time_to_live": 3,
+          "events": [
+            0
+          ]
+        }
+      ],
+      "required_method": [
+        {
+          "internal_id": 0,
+          "someip_id": 16416,
+          "transport_protocol": "tcp"
+        },
+        {
+          "internal_id": 1,
+          "someip_id": 16400,
+          "transport_protocol": "tcp"
+        }
+      ]
+    },
+    {
+      "internal_instance_id": "IDSCoreDumpSensor_RequiredSomeipServiceInstance",
+      "internal_service_id": "vwg::services::idscoredumpsensor::IDSCoreDumpSensor",
+      "sd_required_service_timing": {
+        "initial_delay_max": 10,
+        "initial_delay_min": 10,
+        "repetitions_base_delay": 200,
+        "repetitions_max": 3,
+        "time_to_live": 16777215
+      },
+      "someip_instance_id": 1,
+      "someip_interface_id": 24717,
+      "someip_interface_major_version": 1,
+      "someip_interface_minor_version": 0,
+      "udp_port": 0,
+      "required_event": [
+        {
+          "internal_id": 0,
+          "send_on_subscribe": true,
+          "someip_id": 49168,
+          "transport_protocol": [
+            "udp"
+          ]
+        }
+      ],
+      "required_eventgroup": [
+        {
+          "handle_id": 0,
+          "someip_id": 49168,
+          "time_to_live": 3,
+          "events": [
+            0
+          ]
+        }
+      ],
+      "required_method": [
+        {
+          "internal_id": 0,
+          "someip_id": 16400,
+          "transport_protocol": "udp"
+        }
+      ]
+    },
+    {
+      "internal_instance_id": "IDSIpSecuritySensor_RequiredSomeipServiceInstance",
+      "internal_service_id": "vwg::services::idsipsecuritysensor::IDSIpSecuritySensor",
+      "sd_required_service_timing": {
+        "initial_delay_max": 10,
+        "initial_delay_min": 10,
+        "repetitions_base_delay": 200,
+        "repetitions_max": 3,
+        "time_to_live": 16777215
+      },
+      "someip_instance_id": 1,
+      "someip_interface_id": 24624,
+      "someip_interface_major_version": 2,
+      "someip_interface_minor_version": 3,
+      "udp_port": 0,
+      "required_event": [
+        {
+          "internal_id": 0,
+          "send_on_subscribe": true,
+          "someip_id": 49168,
+          "transport_protocol": [
+            "udp"
+          ]
+        }
+      ],
+      "required_eventgroup": [
+        {
+          "handle_id": 0,
+          "someip_id": 49168,
+          "time_to_live": 3,
+          "events": [
+            0
+          ]
+        }
+      ],
+      "required_method": [
+        {
+          "internal_id": 0,
+          "someip_id": 16400,
+          "transport_protocol": "udp"
+        }
+      ]
+    }
+  ]
+}
+

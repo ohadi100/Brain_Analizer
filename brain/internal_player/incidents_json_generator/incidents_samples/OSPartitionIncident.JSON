@@ -1,0 +1,54 @@
+{
+  "id": "6207fdae-d49d-463d-bd17-34f09072c5c0",
+  "timestamp": 0,
+  "constraintId": "b74fb8c4-8a20-4249-93e6-138c90442f77",
+  "type": 2,
+  "baseSuvElements": [ "b859f098-611a-4e60-be59-e33f8e634cf1" ],
+  "additional info":
+    {
+      "dataSets" : [
+        {
+        "baseSuvElementId": "b859f098-611a-4e60-be59-e33f8e634cf1",
+        "dataItems": [
+          {
+            "reference": "dacq/7ed8bdd6-0ebc-4a2c-bc0a-57b314310329/e130c929-61e1-4da5-95a0-07f1522c6cfa",
+            "value": 9.0
+          },
+          {
+            "reference": "dacq/7ed8bdd6-0ebc-4a2c-bc0a-57b314310329/8cbfebe3-26be-4679-bc68-e474345f3151",
+            "value": 8.0
+          },
+          {
+            "reference": "dacq/7ed8bdd6-0ebc-4a2c-bc0a-57b314310329/22ab171a-bded-49fe-93a5-2d2153fc4009",
+            "value": 7.0
+          },
+          {
+            "reference": "dacq/7ed8bdd6-0ebc-4a2c-bc0a-57b314310329/57c9b247-cae6-48e4-9a4e-cf56846ad1e9",
+            "value": [
+              {
+                "id": 0,
+                "value": "123456"
+              },
+              {
+                "id": 1,
+                "value": "message"
+              },
+              {
+                "id": 2,
+                "value": 2.0
+              },
+              {
+                "id": 3,
+                "value": 4.0
+              }
+            ]
+          },
+          {
+            "reference": "dacq/7ed8bdd6-0ebc-4a2c-bc0a-57b314310329/59cfaccb-1495-4259-8e85-c2d9728d286a",
+            "value": 10.0
+          }
+        ]
+      }
+    ]
+  }
+}

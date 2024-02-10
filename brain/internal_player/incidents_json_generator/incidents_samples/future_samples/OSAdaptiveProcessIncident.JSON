@@ -1,0 +1,30 @@
+{
+  "schemaVersion":"0.1",
+  "id":"40059a64-f6a9-4a87-af58-255a0535bf9a",
+  "timestamp":0,
+  "constraintId":"90fd40c4-3595-4856-8ab5-99c2c198b8d7",
+  "type":0,
+  "baseSuvElements" : ["fc46f68f-0a3b-48ba-9a69-9357556a3c93"],
+  "additional info":
+    {
+      "dataSets" : [
+        {
+          "baseSuvElementId":"fc46f68f-0a3b-48ba-9a69-9357556a3c93",
+          "dataItems" : [
+            {
+              "reference":"dacq/393cc2c6-e412-4414-9d72-65df787487ef/a7178255-99ff-4718-aa93-d933bd30023e",
+              "value":2.0
+            },
+            {
+
+              "reference":"dacq/393cc2c6-e412-4414-9d72-65df787487ef/12f43252-5a9a-4836-a5fa-ed89a454e8ab",
+              "value":1.0
+            }
+          ]
+        }
+      ],
+      "unresolvableReferences" : [
+      ]
+    },
+  "categories" : ["Security"]
+}

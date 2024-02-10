@@ -1,0 +1,27 @@
+@startuml
+title BE Logic State Machine Diagram
+Init:
+Init --> Connecting : Connect
+
+Connecting --> Init: Connection Timeout
+Connecting --> ReadyToSend : Connected
+Connecting --> Disabled : Disable
+
+
+ReadyToSend --> Init : Disconnect
+ReadyToSend --> WaitAck : Send data
+ReadyToSend --> Disabled : Disable
+
+
+WaitAck --> Init : Disconnect
+WaitAck --> ReadyToSend : AckOk | AckOkWithTOExpired
+WaitAck --> Retry : DataSentTO | Retry | RetryWithTo
+WaitAck --> Disabled : Disable
+
+Retry --> Init : Disconnect
+Retry --> WaitAck : SendOldData
+Retry --> Disabled : Disable | MaxRetry
+
+Disabled --> Init : Enable
+
+@enduml

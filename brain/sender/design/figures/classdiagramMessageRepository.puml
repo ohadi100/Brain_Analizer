@@ -1,0 +1,22 @@
+@startuml classDiagramMessageRepository
+title Message Repository Class Diagram
+
+package brain
+{
+    package messageRepository
+    {
+        class MessageRepositoryInterface
+        {
+            {abstract} bool Init(const std::vector<MessageRepositoryParameters>& messageRepositoryParams)
+            {abstract} bool Push(MessagePtr&& message, uint8_t priority)
+            {abstract} bool Pop(MessagePtr& message)
+        }
+        class MessageRepositoryQueue
+        {
+            MessageRepositoryPriorityQueue(CounterManagerPtr  debugCounters ,\n EventStorageUPtr eventStorageUPtr = nullptr )
+
+        }
+        MessageRepositoryQueue --|> MessageRepositoryInterface
+    }
+}
+@enduml

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/common/sensor_data/platform_eee/SensorDataFactoryEmpty.cpp
+SensorDataFactoryEmpty.hpp
+/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/common/sensor_data/platform_eee/SensorDataFactoryEmpty.hpp
+
+/home/ohad/work/e3_app_ids_ppe/platform/MEB/brain/common/sensor_data/platform_eee/SensorDataFactoryEmpty.hpp
+

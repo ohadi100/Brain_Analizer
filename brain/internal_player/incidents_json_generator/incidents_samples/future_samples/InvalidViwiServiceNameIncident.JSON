@@ -1,0 +1,64 @@
+{
+ "schemaVersion": "0.1",
+ "id": "063b725f-4a40-4dec-aec2-3e3d35b16c5b",
+ "timestamp": 0,
+ "constraintId": "abb1638c-4138-45f1-9036-cdee6d509087",
+ "type": 2,
+ "baseSuvElements": [
+ "d7d0576d-ad4c-4041-98b4-d76fb2413e48"
+ ],
+ "additional info": {
+ "dataSets": [
+	 {
+	 	"baseSuvElementId": "d7d0576d-ad4c-4041-98b4-d76fb2413e48",
+		 "dataItems": [
+			 {
+			 	"reference": "dacq/4b06fb36-d267-4789-bc26-c85ad0f0d45c/5a847f7bf48d-432a-829e-8f0f77ee39cf",
+				 "value": [
+					 {
+						 "id": 0,
+						"value": 2.0
+					 },
+					 {
+						 "id": 1,
+						"value": 2.0
+					 },
+					 {
+						 "id": 2,
+						"value": 8.0
+					 },
+					 {
+						 "id": 3,
+						"value": 1608122464721.0
+					 },
+					 {
+						 "id": 4,
+						"value": "FindService"
+					 },
+					 {
+						 "id": 5,
+						"value": "SuperFancyAppId"
+					 },
+					 {
+						 "id": 6,
+						"value": "ChargingManagementCore2"
+					 },
+					 {
+						 "id": 7,
+						"value": "2001:db8::1"
+					 },
+					 {
+						 "id": 8,
+						 "value": 45002.0
+					 }
+				 ]
+			 }
+		 ]
+	 }
+ ],
+ 	"unresolvableReferences": []
+ },
+	 "categories": [
+	 "Security"
+ ]
+}

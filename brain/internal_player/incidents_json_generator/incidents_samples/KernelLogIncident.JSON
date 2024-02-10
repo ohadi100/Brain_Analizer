@@ -1,0 +1,44 @@
+{
+ "schemaVersion": "0.1",
+ "id": "b47b205a-35ed-455a-b40e-9411afee3f92",
+ "timestamp": 0,
+ "constraintId": "3691906d-f89e-44d0-b5a9-61b460300b30",
+ "type": 2,
+ "baseSuvElements": [
+ "892e7ef6-2374-40b2-9cd9-c5123b239714"
+ ],
+	 "additional info": {
+	 "dataSets": [
+	 {
+		 "baseSuvElementId": "892e7ef6-2374-40b2-9cd9-c5123b239714",
+		 "dataItems": [
+			 {
+			 	"reference": "dacq/7ed8bdd6-0ebc-4a2c-bc0a-57b314310329/57c9b247-cae6-48e4-9a4e-cf56846ad1e9",
+				 "value": [
+				 	{
+						 "id": 0,
+						"value": "Thu Dec 17 08:18:52 2020"
+					 },
+					 {
+						 "id": 1,
+						"value": "Something terrible happend!"
+					 },
+					 {
+						 "id": 2,
+						"value": 1
+					 },
+					 {
+						 "id": 3,
+						"value": 1
+					 }
+				 ]
+			 }
+		 ]
+	 }
+ ],
+ 	"unresolvableReferences": []
+ },
+	 "categories": [
+	 "Security"
+ ]
+}

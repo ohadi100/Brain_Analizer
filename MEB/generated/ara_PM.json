@@ -1,0 +1,27 @@
+{
+  "version_info": {
+    "pluget_build_git_version": "RFI_ADG-1.4.14_1",
+    "pluget_build_date": "28-03-2023 13:37:08"
+  },
+  "unix_domain_socket_path": "/var/run/adaptive/ara_PM/ara_PM.socket",
+  "database_base_dir": "/data/target/adaptive/ara_PM",
+  "secondary_db_dir": "/data/target/adaptive/ara_PM",
+  "secondary_db_apps": [],
+  "com_socket_name": "/var/run/adaptive/ara_Com/ara_com_sm",
+  "com_socket_polling_timeout": "60",
+  "limits": "/etc/adaptive/ara_PM/",
+  "stats": "/data/adaptive/ara_PM/stats.json",
+  "enable_stats_journaling": false,
+  "enable_sqlite_iocap_safe_append": false,
+  "enable_sqlite_without_rowid": false,
+  "instance_id": "daemon0",
+  "caching_settings": {
+    "cache_size": "10M",
+    "default_cache_usage": false
+  },
+  "flash_protection": false,
+  "enable_sqlite_wal_journaling": false,
+  "enable_suppress_db_checkpoint_on_closure": false,
+  "enable_sqlite_lockmode_exclusive": false,
+  "wal_checkpoint_file_size_limit": "0"
+}

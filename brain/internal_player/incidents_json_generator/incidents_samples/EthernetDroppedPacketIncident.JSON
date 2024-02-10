@@ -1,0 +1,66 @@
+
+{
+ "schemaVersion": "0.1",
+ "id": "6f744e5a-d9f8-460b-9f85-cd6c3eada7ac",
+ "timestamp": 0,
+ "constraintId": "fb968b4e-12b3-11ea-8d71-362b9e155667",
+ "type": 2,
+ "baseSuvElements": [
+  "c7bfc3bb-d4c4-461a-a4cf-527b740d05d2"
+  ],
+  "additional info": {
+    "dataSets": [
+     {
+       "baseSuvElementId": "c7bfc3bb-d4c4-461a-a4cf-527b740d05d2",
+       "dataItems": [
+          {
+           "reference": "dacq/92d58a6e-4860-409c-9566-31cdb52a80e6/0f6ef590-4395-49c8-8a8e-317ca3976e31",
+           "value": [
+             {
+               "id": 0,
+              "value": "00:00:00:00:00:00"
+               },
+               {
+               "id": 1,
+              "value": 108.0
+               },
+               {
+               "id": 2,
+              "value": 58.0
+               },
+               {
+               "id": 3,
+              "value": "0000:0000:0000:0000:0000:0000:0000:0001"
+               },
+               {
+               "id": 4,
+              "value": "0000:0000:0000:0000:0000:0000:0000:0001"
+               },
+               {
+               "id": 7,
+              "value": 129.0
+               },
+               {
+               "id": 8,
+              "value": 0.0
+               },
+               {
+               "id": 9,
+              "value": 1608122220.0
+               },
+               {
+               "id": 10,
+               "value": 805597.0
+               }
+            ]
+          }
+      ]
+    }
+  ], 
+  "unresolvableReferences": []
+},
+ "categories": [
+ "Security"
+  ]
+}
+
